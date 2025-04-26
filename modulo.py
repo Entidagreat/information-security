@@ -35,7 +35,8 @@ def nghich_dao_modulo(a, m):
         y_new = y0_new - q_new * y1_new if q_new is not None else None
         
         # In bước hiện tại
-        print(f"{step:<8} {m_new:<8} {a_new:<8} {r_new:<8} {q_new if q_new is not None else '.':<8} {y0_new:<8} {y1_new:<8} {y_new if y_new is not None else '.':<8}")
+        print(f"{step:<8} {m_new:<8} {a_new:<8} {r_new:<8} \
+        {q_new if q_new is not None else '.':<8} {y0_new:<8} {y1_new:<8} {y_new if y_new is not None else '.':<8}")
         
         # Cập nhật giá trị cho vòng lặp tiếp theo
         m = m_new

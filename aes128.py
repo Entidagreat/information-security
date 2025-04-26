@@ -136,7 +136,7 @@ print_horizontal_matrices(all_round_matrices[6:], round_titles[6:])
 # Nhập plaintext
 plaintext_str = input("\nNhập thông điệp cần mã hóa (16 ký tự): ")
 if len(plaintext_str) != 16:
-    print("⚠️ Thông điệp phải đúng 16 ký tự!")
+    print(" Thông điệp phải đúng 16 ký tự!")
     exit()
 
 plaintext = plaintext_str.encode('utf-8')
@@ -191,9 +191,6 @@ for i in range(0, len(round_titles)):
     elif "MixColumns" in round_titles[i]:
         # Handled in the SubBytes block
         pass
-
-
-
 
 # In kết quả cuối
 ciphertext = bytes(state)

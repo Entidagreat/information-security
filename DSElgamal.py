@@ -240,8 +240,6 @@ def main():
         # Bob verifies the signature
         elgamal_verify(message, S1, S2, p, alpha, YA)
         
-        # Show the mathematical proof
-        show_proof()
     
     else:  # mode == 2
         # Mode 2: Anyone verifies a signature
@@ -278,8 +276,7 @@ def main():
         # Verify the signature
         elgamal_verify(message, S1, S2, p, alpha, YA, verifier_name)
         
-        # Show the mathematical proof
-        show_proof()
+
 
 if __name__ == "__main__":
     main()
